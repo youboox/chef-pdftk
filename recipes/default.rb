@@ -40,12 +40,13 @@ else
   end
 end
 
-remote_file "/tmp/#{node.pdftk.source}" do
-  source node.pdftk.uri
-  mode "0644"
-  not_if do
-      File.exists?("/tmp/#{node.pdftk.source}")
-  end
+bash 'download archive' do
+  cwd '/tmp'
+  code <<-EOH
+    wget -O /tmp/#{node.pdftk.source} #{node.pdftk.uri}
+    chmod 0644 /tmp/#{node.pdftk.source}
+  EOH
+  not_if { File.exists?("/tmp/#{node.pdftk.source}") }
 end
 
 execute "Unzipping archive #{node.pdftk.source}" do
