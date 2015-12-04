@@ -18,4 +18,4 @@
 
 default[:pdftk][:source] = "pdftk-2.01-src.zip"
 default[:pdftk][:dir] = "pdftk-2.01-dist"
-default[:pdftk][:uri] = "http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk-2.01-src.zip"
+default[:pdftk][:uri] = "https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk-2.01-src.zip"
