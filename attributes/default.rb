@@ -16,6 +16,6 @@
 ## limitations under the License.
 ##
 
-default[:pdftk][:source] = "pdftk-2.01-src.zip"
-default[:pdftk][:dir] = "pdftk-2.01-dist"
-default[:pdftk][:uri] = "https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk-2.01-src.zip"
+default[:pdftk][:source] = "pdftk-2.02-src.zip"
+default[:pdftk][:dir] = "pdftk-2.02-dist"
+default[:pdftk][:uri] = "https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk-2.02-src.zip"
